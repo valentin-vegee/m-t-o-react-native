@@ -1,6 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#E0F2F1', 
+  },
   container: {
     flex: 1,
     backgroundColor: '#E0F2F1',
@@ -10,6 +14,36 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#009688',
+  },
+
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    margin: 10,
+  },
+  searchInput: {
+    flex: 1,
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    color: '#000',
+  },
+  searchButton: {
+    marginLeft: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    backgroundColor: '#009688',
+    borderRadius: 10,
+  },
+  searchButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
   },
 
   header: {

@@ -8,13 +8,13 @@ const ForecastList = ({ dailyForecast, setSelectedDay }) => {
       <FlatList
         data={dailyForecast}
         horizontal
-        keyExtractor={(item) => item.date}
+        keyExtractor={(item) => item.dateKey}
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.forecastButton}
             onPress={() => setSelectedDay(item.details)}
           >
-            <Text style={styles.forecastDate}>{item.date}</Text>
+            <Text style={styles.forecastDate}>{item.displayDate}</Text>
             <Text style={styles.forecastTemp}>
               {Math.round(item.min)}° / {Math.round(item.max)}°
             </Text>
