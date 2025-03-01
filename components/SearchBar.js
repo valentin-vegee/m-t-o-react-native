@@ -1,4 +1,3 @@
-// components/SearchBar.js
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 import styles from '../styles';
